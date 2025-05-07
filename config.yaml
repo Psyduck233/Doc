@@ -1,0 +1,73 @@
+pdf2image:
+  poppler_path: F:\apycharm\Doc\poppler-24.08.0\Library\bin
+
+predict:
+  lineformer_dir: F:/apycharm/Doc/LineFormer
+  predict_ckpt: F:/apycharm/Doc/LineFormer/models/iter_3000.pth
+  predict_config: F:/apycharm/Doc/LineFormer/lineformer_swin_t_config.py
+
+#yolo:
+#  model_path: "D:/Personal_Project/Doc_analyze/yolo_model/best.pt"  # YOLO 模型路径
+#  ocr_det_model: "D:/Personal_Project/Doc_analyze/ocr_models/ch_PP-OCRv4_det_infer"  # OCR 检测模型路径
+#  ocr_rec_model: "D:/Personal_Project/Doc_analyze/ocr_models/ch_PP-OCRv4_rec_infer"  # OCR 识别模型路径
+yolo:
+  model_path: F:/apycharm/Doc/yolo_model/best.pt  # YOLO 模型路径
+  ocr_det_model: F:/apycharm/Doc/ocr_models/ch_PP-OCRv4_det_infer  # OCR 检测模型路径
+  ocr_rec_model: F:/apycharm/Doc/ocr_models/ch_PP-OCRv4_rec_infer  # OCR 识别模型路径
+
+Structure Processor:
+  layout_model_dir: F:/apycharm/Doc/ocr_models/layout_infer
+  layout_dict_path: F:/apycharm/Doc/ocr_models/ly_dict.txt
+  table_model_dir: F:/apycharm/Doc/ocr_models/ch_ppstructure_mobile_v2.0_SLANet_infer
+  formula_model_dir: F:/apycharm/Doc/ocr_models/rec_latex_ocr_infer
+  det_model_dir: F:/apycharm/Doc/ocr_models/ch_PP-OCRv4_det_infer
+  rec_model_dir: F:/apycharm/Doc/ocr_models/ch_PP-OCRv4_rec_infer
+  font_path: F:/apycharm/Doc/chinese_cht.ttf
+
+QwenVL:
+  api_key: "sk-25073b1d5af2464292d41bfb04d92a7e"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-vl-plus"
+  safe_mode: true
+  enable_cutline_prompt: false  # 是否启用 cutline 构建提示词（不准,不建议开启）
+  max_retry: 3
+
+OPENAI:
+  api_key: "sk-e6412d3957f44da9b3774f7149860c15"
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  max_retry: 3
+
+#merge:
+#  base_dir: D:/Personal_Project/Doc_analyze/test/yolo_result
+#  csv_dir: D:/Personal_Project/Doc_analyze/test/test_result/csv
+#  images_dir: D:/Personal_Project/Doc_analyze/test/test_result/images
+#
+#generation:
+#  output_dir: D:/Personal_Project/Doc_analyze/test/yolo_result
+
+#Layout Analysis and Table Recognition:
+#  layout_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/layout_infer
+#  layout_dict_path: D:/Personal_Project/Doc_analyze/ocr_models/ly_dict.txt
+#  table_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/ch_ppstructure_mobile_v2.0_SLANet_infer
+#  formula_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/rec_latex_ocr_infer
+#  det_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/ch_PP-OCRv4_det_infer
+#  rec_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/ch_PP-OCRv4_rec_infer
+#  image_path: D:/Personal_Project/Doc_analyze/ppstructure/datatest/00331.jpg
+#  save_folder: D:/Personal_Project/Doc_analyze/output
+#  font_path: D:/Personal_Project/Doc_analyze/chinese_cht.ttf
+
+#yolo:
+#  model_path: D:/Personal_Project/Doc_analyze/yolo_model/best.pt
+#  input_dir: D:/Personal_Project/Doc_analyze/test/test_pic
+#  output_dir: D:/Personal_Project/Doc_analyze/test/yolo_result
+#  ocr_det_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/ch_PP-OCRv4_det_infer
+#  ocr_rec_model_dir: D:/Personal_Project/Doc_analyze/ocr_models/ch_PP-OCRv4_rec_infer
+
+#predict:
+#  lineformer_dir: D:/Personal_Project/Doc_analyze/LineFormer
+#  predict_input_dir: D:/Personal_Project/Doc_analyze/test/test_pic
+#  predict_output_image_dir: D:/Personal_Project/Doc_analyze/test/test_result/images
+#  predict_output_csv_dir: D:/Personal_Project/Doc_analyze/test/test_result/csv
+#  predict_ckpt: D:/Personal_Project/Doc_analyze/LineFormer/models/iter_3000.pth
+#  predict_config: D:/Personal_Project/Doc_analyze/LineFormer/lineformer_swin_t_config.py
